@@ -1,0 +1,150 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #e3f2fd;
+    color: #1a2b4c;
+    padding: 20px;
+}
+
+header {
+    background: linear-gradient(135deg, #0d47a1, #1976d2);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 12px 24px rgba(13, 71, 161, 0.25);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.student {
+    font-size: 1.2em;
+    opacity: 0.95;
+    font-weight: 300;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.task {
+    background: white;
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 32px;
+    box-shadow: 0 8px 20px rgba(25, 118, 210, 0.12);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border: 1px solid rgba(33, 150, 243, 0.1);
+}
+
+.task:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 32px rgba(25, 118, 210, 0.2);
+}
+
+.task h2 {
+    color: #0d47a1;
+    border-bottom: 3px solid #42a5f5;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+    font-size: 1.9em;
+    font-weight: 500;
+}
+
+.subtask {
+    margin: 24px 0;
+    padding: 20px;
+    background: #f5f9ff;
+    border-radius: 12px;
+    border-left: 6px solid #1e88e5;
+    transition: background 0.2s;
+}
+
+.subtask:hover {
+    background: #e3f2fd;
+}
+
+.subtask h3 {
+    color: #1565c0;
+    margin-bottom: 18px;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.screenshots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.screenshot {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #bbdefb;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(13, 71, 161, 0.15);
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    cursor: pointer;
+}
+
+.screenshot:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 24px rgba(13, 71, 161, 0.25);
+    border-color: #42a5f5;
+}
+
+a {
+    color: #1565c0;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px dotted transparent;
+    transition: color 0.2s, border-bottom-color 0.2s;
+}
+
+a:hover {
+    color: #0d47a1;
+    text-decoration: none;
+    border-bottom-color: #0d47a1;
+}
+
+footer {
+    text-align: center;
+    margin-top: 48px;
+    padding: 24px;
+    color: #546e7a;
+    font-size: 0.95em;
+    border-top: 1px solid #bbdefb;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    
+    .task {
+        padding: 18px;
+    }
+    
+    .subtask {
+        padding: 14px;
+    }
+    
+    .screenshots {
+        gap: 16px;
+    }
+}
